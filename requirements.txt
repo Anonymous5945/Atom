@@ -1,0 +1,10 @@
+aiohttp
+aria2p
+hachoir
+Pillow
+https://github.com/pyrogram/pyrogram/archive/asyncio.zip
+requests
+tgcrypto
+asyncio
+beautifulsoup4
+youtube-dl
