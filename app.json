@@ -80,6 +80,10 @@
       "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
       "value": ""
     },
+      "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": "395357593"
+    },
     "CHUNK_SIZE": {
       "description": "should be an integer",
       "value": "128",
