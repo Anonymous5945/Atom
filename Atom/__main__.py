@@ -8,7 +8,7 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 
 import os
-from tobrot import (
+from Atom import (
     DOWNLOAD_LOCATION,
     TG_BOT_TOKEN,
     APP_ID,
