@@ -29,5 +29,5 @@ class Config(object):
     # Eval command
     Eval_CMD_TRIGGER = os.environ.get("Eval_CMD_TRIGGER", "eval")
     # translator command
-    Save_CMD_TRIGGER = os.environ.get("Save_CMD_TRIGGER", "savethumbnail")
+    Save_CMD_TRIGGER = os.environ.get("Save_CMD_TRIGGER", "tr")
     
