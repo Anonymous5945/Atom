@@ -10,3 +10,4 @@ beautifulsoup4
 youtube-dl
 emoji
 googletrans
+speedtest-cli
