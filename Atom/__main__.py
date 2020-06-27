@@ -37,7 +37,6 @@ if __name__ == "__main__" :
         api_hash=API_HASH,
         workers=343
     )
-    #  
     #
     incoming_message_handler = MessageHandler(
         trait_message_f,
