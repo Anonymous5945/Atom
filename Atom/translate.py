@@ -1,3 +1,12 @@
+import logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+LOGGER = logging.getLogger(__name__)
+
+
 """ Google Translate
 Available Commands:
 .tr LanguageCode as reply to a message
@@ -5,11 +14,9 @@ Available Commands:
 
 import emoji
 from googletrans import Translator
-from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="tr ?(.*)"))
-async def _(event):
+async def trait_message_f(client, event):
     if event.fwd_from:
         return
     if "trim" in event.raw_text:
