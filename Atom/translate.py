@@ -14,6 +14,11 @@ import time
 import sys
 import traceback
 
+from pyrogram import Filters
+
+from Atom import (
+    AUTH_CHANNEL
+)
 """ Google Translate
 Available Commands:
 .tr LanguageCode as reply to a message
@@ -29,7 +34,7 @@ async def trait_message_f(client, event):
     if "trim" in event.text:
         # https://t.me/c/1220993104/192075
         return
-    input_str = event.pattern_match.group(1)
+    input_str = event.Filters.chat(chats=AUTH_CHANNEL)
     if event.reply_to_message_id:
         previous_message = await event.get_reply_message()
         text = previous_message.message
