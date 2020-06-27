@@ -38,7 +38,7 @@ if __name__ == "__main__" :
         workers=343
     )
     #
-    incoming_message_handler = MessageHandler(
+    trait_message_handler = MessageHandler(
         trait_message_f,
         filters=Filters.command([Save_CMD_TRIGGER]) & Filters.chat(chats=AUTH_CHANNEL)
     )
