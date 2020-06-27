@@ -42,4 +42,6 @@ if __name__ == "__main__" :
         trait_message_f,
         filters=Filters.command([Save_CMD_TRIGGER]) & Filters.chat(chats=AUTH_CHANNEL)
     )
-    app.add_handler(trait_message_handler) 
+    app.add_handler(trait_message_handler)
+    # 
+    app.run()
