@@ -34,7 +34,7 @@ async def trait_message_f(client, event):
     if "trim" in event.text:
         # https://t.me/c/1220993104/192075
         return
-    input_str = event.Filters.chat(chats=AUTH_CHANNEL)
+    input_str = event
     if event.reply_to_message_id:
         previous_message = await event.get_reply_message()
         text = previous_message.message
